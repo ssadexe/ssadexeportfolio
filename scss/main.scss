@@ -54,7 +54,7 @@ body {
 .header {
     display: flex;
     align-items: center;
-    padding: 4rem 2rem 0 2rem;
+    padding: 2rem 2rem 0 2rem;
 }
 
 .burger-btn img {
@@ -100,7 +100,7 @@ body {
 
 .content-box {
     animation: backInUp;
-    animation-duration: 1.2s;
+    animation-duration: 1.5s;
 }
 
 .main-img-box {
@@ -113,13 +113,18 @@ body {
     transition: 0.7s ease;
 }
 
+.main-img-box-hide {
+    opacity: 0;
+    transition: .2s ease;
+}
+
 .img-section {
     display: flex;
     justify-content: center;
     width: 100%;
 
     animation: backInDown;
-    animation-duration: .4s;
+    animation-duration: 1s;
 }
 
 .slogan-section {
@@ -139,11 +144,6 @@ body {
         weight: 700;
     }
     color: $light;
-}
-
-.main-img-box-hide {
-    opacity: 0;
-    transition: .2s ease;
 }
 
 .info-box {
@@ -184,11 +184,47 @@ body {
 }
 
 .person-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-top: 1rem;
 
     font: {
         size: 1.4rem;
         weight: 700;
+    }
+}
+
+span.skill {
+    margin-left: 1rem;
+    padding: 3px 5px;
+
+    font: {
+        size: 1rem;
+        font-weight: 500;
+    }
+    border-radius: 4px;
+    
+
+    &.frontend {
+        color: #ff7300;
+        background-color: #f8d2b2;
+        border: 1px solid #ff7300;
+    }
+    &.design {
+        color: #cc00ff;
+        background-color: #ecb2f8;
+        border: 1px solid #cc00ff;
+    }
+    &.js {
+        color: #0066ff;
+        background-color: #b2d3f8;
+        border: 1px solid #0066ff;
+    }
+    &.smm {
+        color: #ff0000;
+        background-color: #f8b2b2;
+        border: 1px solid #ff0000;
     }
 }
 
@@ -232,6 +268,14 @@ body {
     }
     .person {
         width: 50%;
+    }
+    .person-name {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    span.skill {
+        margin-top: 5px;
+        margin-left: 0;
     }
 }
 @media screen and (min-width: 1199px) {

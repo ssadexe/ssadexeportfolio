@@ -2,11 +2,12 @@
 
 .burger-menu {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 80vw;
-    height: 100vh;
-    padding: 4rem 0 0 2rem;
+    height: 100%;
+    padding: 2rem 0 0 2rem;
     background-color: $dark;
-
     transform: translateX(-130%);
     transition: .3s ease-out;
 
@@ -52,9 +53,8 @@
 }
 
 .close-burger-btn {
-    position: absolute;
-    top: 2rem;
-    right: -4rem;
+    margin: 0 1rem 0 auto;
+
 
     img {
         width: 2.5rem;

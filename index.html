@@ -15,11 +15,11 @@
 </head>
 <body>
     <div class="burger-menu" id="burger-menu">
+        <div class="close-burger-btn" id="close-burger-btn" onclick="closeMenu()">
+            <img src="img/buttons/close-icon.svg" alt="close button">
+        </div>
         <div class="menu-head">
             <p class="menu-title">Navigation Menu</p>
-            <div class="close-burger-btn" id="close-burger-btn" onclick="closeMenu()">
-                <img src="img/buttons/close-circle.svg" alt="close button">
-            </div>
         </div>
         <ul>
             <li><a href="#">Информация</a></li>
@@ -28,11 +28,11 @@
             <li><a href="#">Контакты</a></li>
         </ul>
     </div>
-    <div class="box header">
+    <div class="box header" id="header">
         <div class="burger-btn" id="burger-btn" onclick="openMenu()">
             <img src="img/buttons/menu.svg" alt="burger button">
         </div>
-        <div class="logo">
+        <div class="logo" id="logo">
             Front<span class="accent">Lab</span>
         </div>
         <div class="navigation">
@@ -65,28 +65,28 @@
                     <div class="person-avatar">
                         <img src="img/avatar-1.svg" alt="">
                     </div>
-                    <p class="person-name">Вячеслав Дёмин</p>
+                    <p class="person-name">Вячеслав Дёмин<span class="skill frontend">frontend dev</span></p>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam obcaecati, labore ipsum tenetur fugiat ab quaerat nulla ullam eum? Ipsam consequatur beatae laboriosam eum eos quasi provident, ducimus obcaecati numquam?</p>
                 </div>
                 <div class="person">
                     <div class="person-avatar">
                         <img src="img/avatar-2.svg" alt="">
                     </div>
-                    <p class="person-name">Ирина Акимова</p>
+                    <p class="person-name">Ирина Акимова<span class="skill design">design</span></p>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam obcaecati, labore ipsum tenetur fugiat ab quaerat nulla ullam eum? Ipsam consequatur beatae laboriosam eum eos quasi provident, ducimus obcaecati numquam?</p>
                 </div>
                 <div class="person">
                     <div class="person-avatar">
                         <img src="img/avatar-3.svg" alt="">
                     </div>
-                    <p class="person-name">Олег Дядечко</p>
+                    <p class="person-name">Олег Дядечко<span class="skill js">JavaScript dev</span></p>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam obcaecati, labore ipsum tenetur fugiat ab quaerat nulla ullam eum? Ipsam consequatur beatae laboriosam eum eos quasi provident, ducimus obcaecati numquam?</p>
                 </div>
                 <div class="person">
                     <div class="person-avatar">
                         <img src="img/avatar-4.svg" alt="">
                     </div>
-                    <p class="person-name">Елен Рогова</p>
+                    <p class="person-name">Елен Рогова<span class="skill smm">SMM</span></p>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam obcaecati, labore ipsum tenetur fugiat ab quaerat nulla ullam eum? Ipsam consequatur beatae laboriosam eum eos quasi provident, ducimus obcaecati numquam?</p>
                 </div>
             </div>
