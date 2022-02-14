@@ -1,1 +1,0 @@
-//ScrollReveal().reveal('.content-box', { delay: 500 });
