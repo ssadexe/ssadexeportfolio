@@ -1,17 +1,11 @@
-$black: #000;
-$grey: #07031a;
-$white: #fff;
-$dark: #0f082f;
-$accent: #6857dd;
-$second-clr: #b8b5ff;
-$light: #e4fbff;
+@import "variables";
 
 .burger-menu {
     position: absolute;
     width: 80vw;
     height: 100vh;
     padding: 2rem 0 0 2rem;
-    background-color: $grey;
+    background-color: $dark;
 
     transform: translateX(-130%);
     transition: .3s ease-out;
@@ -25,7 +19,7 @@ $light: #e4fbff;
             list-style: none;
 
             font: {
-                size: 1.2rem;
+                size: 1.4rem;
             }
 
             a {
@@ -37,7 +31,6 @@ $light: #e4fbff;
 }
 
 .burger-vis {
-    box-shadow: 0 0 7rem 6rem $black;
     transform: translateX(0%);
     transition: .3s ease-in;
 }
@@ -55,7 +48,7 @@ $light: #e4fbff;
         size: 2rem;
         weight: 600;
     }
-    color: $white;
+    color: $grey;
 }
 
 .close-burger-btn {

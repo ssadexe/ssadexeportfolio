@@ -1,13 +1,6 @@
 @import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap');
-
-$black: #000;
-$grey: #07031a;
-$white: #fff;
-$dark: #0f082f;
-$accent: #6857dd;
-$second-clr: #b8b5ff;
-$light: #e4fbff;
+@import "variables";
 
 * {
     margin: 0;
@@ -16,7 +9,6 @@ $light: #e4fbff;
 }
 
 html {
-    overflow: hidden;
     
     font: {
         family: 'Montserrat';
@@ -26,11 +18,15 @@ html {
 
 body {
     position: relative;
-    background-color: $grey;
+    background-color: $black;
 }
 
 .container {
     padding: 3rem 2rem;
+}
+
+.box {
+    padding: 2rem;
 }
 
 .container-title {
@@ -39,7 +35,7 @@ body {
         size: 2rem;
         weight: 700;
     }
-    color: $light;
+    color: $black;
 }
 
 .text {
@@ -48,7 +44,7 @@ body {
     font: {
         size: 1.2rem;
     }
-    color: $light;
+    color: $black;
 }
 
 .accent {
@@ -90,6 +86,7 @@ body {
 .nav-el {
     margin-left: 3rem;
     text-decoration: none;
+    transition: .3s ease;
 
     font: {
         size: 1.2rem;
@@ -97,7 +94,7 @@ body {
     color: $light;
     
     &:hover {
-        color: $accent;
+        color: $second-clr;
     }
 }
 
@@ -150,8 +147,49 @@ body {
 }
 
 .info-box {
-    border-radius: 4rem 4rem 0 0;
-    background-color: $dark;
+    border-radius: 3rem 3rem 0 0;
+    background-color: $white;
+}
+
+.team-box {
+    background-color: $white;
+}
+
+.person-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.person {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-right: 4rem;
+
+    .text {
+        margin-top: 1rem;
+    }
+}
+
+.person-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    img {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+.person-name {
+    margin-top: 1rem;
+
+    font: {
+        size: 1.4rem;
+        weight: 700;
+    }
 }
 
 //$grid-breakpoints: (
@@ -170,6 +208,9 @@ body {
     
 }
 @media screen and (min-width: 991px) {
+    .box {
+        margin: 0 4rem;
+    }
     .burger-btn {
         display: none;
     }
@@ -189,7 +230,12 @@ body {
         display: flex;
         justify-content: flex-start;
     }
+    .person {
+        width: 50%;
+    }
 }
 @media screen and (min-width: 1199px) {
-    
+    .person {
+        width: 25%;
+    }
 }
