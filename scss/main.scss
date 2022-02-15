@@ -18,37 +18,7 @@ html {
 
 body {
     position: relative;
-    background-color: $black;
-}
-
-.container {
-    padding: 3rem 2rem;
-}
-
-.box {
-    padding: 2rem;
-}
-
-.container-title {
-
-    font: {
-        size: 2rem;
-        weight: 700;
-    }
-    color: $black;
-}
-
-.text {
-    margin-top: 2rem;
-
-    font: {
-        size: 1.2rem;
-    }
-    color: $black;
-}
-
-.accent {
-    color: $accent;
+    background: linear-gradient(333deg, rgba(188,201,235,1) 0%, rgba(237,245,255,1) 100%);
 }
 
 .header {
@@ -75,7 +45,7 @@ body {
         size: 1.5rem;
         weight: 700;
     }
-    color: $white;
+    color: $black;
 }
 
 .navigation {
@@ -91,16 +61,15 @@ body {
     font: {
         size: 1.2rem;
     }
-    color: $light;
+    color: $grey;
     
     &:hover {
-        color: $second-clr;
+        color: $black;
     }
 }
 
 .content-box {
-    animation: backInUp;
-    animation-duration: 1.5s;
+    
 }
 
 .main-img-box {
@@ -113,11 +82,6 @@ body {
     transition: 0.7s ease;
 }
 
-.main-img-box-hide {
-    opacity: 0;
-    transition: .2s ease;
-}
-
 .img-section {
     display: flex;
     justify-content: center;
@@ -125,11 +89,17 @@ body {
 
     animation: backInDown;
     animation-duration: 1s;
+
+    img {
+        width: 70%;
+    }
 }
 
 .slogan-section {
     display: none;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     width: 50%;
     height: 100%;
 
@@ -143,7 +113,35 @@ body {
         size: 4rem;
         weight: 700;
     }
-    color: $light;
+    color: $black;
+}
+
+.subslogan {
+    width: 70%;
+
+    font: {
+        size: 1.2rem;
+    }
+    color: $grey;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    background: linear-gradient(30deg, rgba(89,137,254,1) 0%, rgba(162,202,254,1) 100%);
+    transition: .3s ease;
+
+    font: {
+        size: 1.2rem;
+    }
+    color: $white;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px $shadow;
+    }
 }
 
 .info-box {
@@ -178,8 +176,8 @@ body {
     padding: 2rem;
 
     img {
-        width: 15rem;
-        height: 15rem;
+        width: 20rem;
+        height: 20rem;
     }
 }
 
@@ -207,9 +205,9 @@ span.skill {
     
 
     &.frontend {
-        color: #ff7300;
-        background-color: #f8d2b2;
-        border: 1px solid #ff7300;
+        color: #00ff40;
+        background-color: #b2f8c7;
+        border: 1px solid #00ff40;
     }
     &.design {
         color: #cc00ff;
@@ -228,6 +226,82 @@ span.skill {
     }
 }
 
+.services-box {
+    border-radius: 0 0 3rem 3rem;
+    background-color: $white;
+
+    .box-title {
+        padding-bottom: 2rem;
+    }
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 3rem;
+    background-color: $white;
+}
+
+.card-icon {
+    width: 8rem;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+
+    &#card-1 {
+        background-color: #b2f8c7;
+    }
+    &#card-2 {
+        background-color: #ecb2f8;
+    }
+    &#card-3 {
+        background-color: #b2d3f8;
+    }
+    &#card-4 {
+        background-color: #f8b2b2;
+    }
+}
+
+.icon {
+    padding: 2rem;
+    width: 100%;
+}
+
+.card-title {
+
+    font: {
+        size: 1.4rem;
+        weight: 700;
+    }
+}
+
+.card-subtitle {
+    margin-top: .5rem;
+    font: {
+        size: 1.2rem;
+    }
+    color: $grey;
+}
+
+.card-features {
+    margin-top: 3rem;
+    list-style: none;
+
+    font: {
+        size: 1.2rem;
+    }
+
+    li {
+        margin-bottom: .3rem;
+    }
+}
+
 //$grid-breakpoints: (
 //  xs: 0,
 //  sm: 576px,
@@ -238,15 +312,15 @@ span.skill {
 //);
 
 @media screen and (min-width: 576px) {
-
+    .box#cards {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 @media screen and (min-width: 767px) {
     
 }
 @media screen and (min-width: 991px) {
-    .box {
-        margin: 0 4rem;
-    }
     .burger-btn {
         display: none;
     }
@@ -277,9 +351,18 @@ span.skill {
         margin-top: 5px;
         margin-left: 0;
     }
+    .card-section {
+        justify-content: space-between;
+    }
+    .card {
+        width: 48%;
+    }
 }
 @media screen and (min-width: 1199px) {
     .person {
         width: 25%;
+    }
+    .card {
+        width: 23%;
     }
 }

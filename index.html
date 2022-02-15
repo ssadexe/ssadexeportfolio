@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="scss/burger-menu.css">
+    <link rel="stylesheet" href="scss/defaults_elements.css">
 
     <script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
 
@@ -45,21 +46,26 @@
     
         <div class="main-img-box" id="main-img-box">
             <div class="img-section">
-                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_yqgs7wzj.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                <img src="img/main-img.svg" alt="">
             </div>
             <div class="slogan-section">
                 <p class="slogan">Создай свой<br><span class="accent">Сайт</span>.</p>
+                <p class="subslogan">Расширяй границы. Привлекай клиентов. Будь уникальным. Сейчас самое подходящее ввремя чтобы создать свой сайт.</p>
+                <a href="#">
+                    <div class="contact-btn">
+                        Связаться
+                    </div>
+                </a>
             </div>
         </div>
     <div class="content-box">
         <div class="box info-box">
-            <p class="container-title">Немного о FrontLab</p>
+            <p class="box-title">Немного о FrontLab</p>
             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae non quod at in voluptates, cum fugit unde numquam corporis voluptate, eos dolor debitis, maxime corrupti ea vero a. Aperiam, ut?</p>
             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae non quod at in voluptates, cum fugit unde numquam corporis voluptate, eos dolor debitis, maxime corrupti ea vero a. Aperiam, ut?</p>
         </div>
         <div class="box team-box">
-            <p class="container-title">Наша команда</p>
+            <p class="box-title">Наша команда</p>
             <div class="person-section">
                 <div class="person">
                     <div class="person-avatar">
@@ -91,7 +97,63 @@
                 </div>
             </div>
         </div>
+        <div class="box services-box">
+            <p class="box-title">Что мы умеем</p>
+        </div>
+        <div class="box" id="cards">
+            <div class="card-section">
+                <div class="card">
+                    <div class="card-icon" id="card-1">
+                        <img src="img/icons/designtools.svg" alt="" class="icon">
+                    </div>
+                    <p class="card-title">Разработка дизайна</p>
+                    <p class="card-subtitle">Создание уникального стиля и разработка интерфейсов</p>
+                    <ul class="card-features">
+                        <li class="feature">Создание макета</li>
+                        <li class="feature">Разработка интерфейса</li>
+                        <li class="feature">Создание графики</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon"  id="card-2">
+                        <img src="img/icons/cloud-add.svg" alt="" class="icon">
+                    </div>   
+                    <p class="card-title">Настройка хостинга</p>
+                    <p class="card-subtitle">Размещение сайта в интернете и его настройка</p>
+                    <ul class="card-features">
+                        <li class="feature">Подключение сайта к хостингу</li>
+                        <li class="feature">Настройка панели администратора</li>
+                        <li class="feature">Подключение домена</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon"  id="card-3">
+                        <img src="img/icons/code-1.svg" alt="" class="icon">
+                    </div>          
+                    <p class="card-title">Сайт под ключ</p>
+                    <p class="card-subtitle">Разработка сайта с нуля</p>
+                    <ul class="card-features">
+                        <li class="feature">Создание макета</li>
+                        <li class="feature">Верстка макета</li>
+                        <li class="feature">Настройка и размещение на хостинге</li>
+                    </ul>
+                </div>
+                <div class="card">
+                     <div class="card-icon" id="card-4">
+                         <img src="img/icons/edit.svg" alt="" class="icon">
+                    </div>
+                    <p class="card-title">Редактирование страниц</p>
+                    <p class="card-subtitle">Исправление багов и добавление новых элементов</p>
+                    <ul class="card-features">
+                        <li class="feature">Устранение ошибок и багов</li>
+                        <li class="feature">Добавление новых элементов страницы</li>
+                        <li class="feature">Редактирование кода</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/burger.js"></script>
+    <script src="js/scrollreveal.js"></script>
 </body>
 </html>
