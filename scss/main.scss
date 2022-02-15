@@ -238,19 +238,19 @@ span.skill {
 .card-section {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
-    padding: 2rem;
+    margin-bottom: 4rem;
     border-radius: 3rem;
     background-color: $white;
 }
 
 .card-icon {
-    width: 8rem;
+    width: 10rem;
     margin-bottom: 2rem;
     border-radius: 50%;
 
@@ -290,7 +290,7 @@ span.skill {
 }
 
 .card-features {
-    margin-top: 3rem;
+    margin-top: 2rem;
     list-style: none;
 
     font: {
@@ -312,10 +312,7 @@ span.skill {
 //);
 
 @media screen and (min-width: 576px) {
-    .box#cards {
-        padding-left: 0;
-        padding-right: 0;
-    }
+
 }
 @media screen and (min-width: 767px) {
     
@@ -363,6 +360,6 @@ span.skill {
         width: 25%;
     }
     .card {
-        width: 23%;
+        width: 20%;
     }
 }
